@@ -7,28 +7,99 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Todo app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
   <script src="./script.js"></script>
+  
 </head>
 <body>
 <div class="backgroundImg">
-  <img src="images/bg-desktop-dark.jpg" width="100%"/>
+  <img src="images/bg-desktop-dark.jpg" />
 </div>
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+ <div class="toDoContainer">
+   <div class="header">
+     <div id="appTitle">To Do</div>
+     <div id="toDoTheme">
+       <img src="images/icon-sun.svg" />
+     </div>
+   </div>
+   <div class="toDoInput">
+     <div class="toDoCheck">
+       <div class="toDoCheckMark">
+         
+       </div>
+      </div>
+     <div id="toDoNewInput">
+       <form onsubmit="addItem(event)">
+         <input type="text" id="toDoInput" placeholder="Create a new to do...">
+       </form>
+     </div>
+   </div>
+   <div class="toDoListWrapper">
+     <div class="toDoList">
+      <div class="toDoItem">
+        <div class="toDoCheck">
+          <div class="toDoCheckMark">
+            <img src="images/icon-check.svg" />
+          </div>
+         </div>
+         <div class="toDoText">This is what I have to do</div>
+      </div>
+      <div class="toDoItem">
+        <div class="toDoCheck">
+          <div class="toDoCheckMark">
+            <img src="images/icon-check.svg" />
+          </div>
+         </div>
+         <div class="toDoText">This is what I have to do</div>
+      </div>
+      <div class="toDoItem">
+        <div class="toDoCheck">
+          <div class="toDoCheckMark">
+            <img src="images/icon-check.svg" />
+          </div>
+         </div>
+         <div class="toDoText">This is what I have to do</div>
+      </div>
+      <div class="toDoItem">
+        <div class="toDoCheck">
+          <div class="toDoCheckMark">
+            <img src="images/icon-check.svg" />
+          </div>
+         </div>
+         <div class="toDoText">This is what I have to do</div>
+      </div>
+      <div class="toDoItem">
+        <div class="toDoCheck">
+          <div class="toDoCheckMark">
+            <img src="images/icon-check.svg" />
+          </div>
+         </div>
+         <div class="toDoText">This is what I have to do</div>
+      </div>
+      <div class="toDoItem">
+        <div class="toDoCheck">
+          <div class="toDoCheckMark">
+            <img src="images/icon-check.svg" />
+          </div>
+         </div>
+         <div class="toDoText">This is what I have to do</div>
+      </div>
+     </div>
+     <div class="toDoItemInfo">
+      <div class="toDoItemNumber">
+        # of items left
+      </div>
+      <div class="toDoFilter">
+        <span class="toDoFilterActive">All</span>
+        <span>Active</span>
+        <span>Completed</span>
+      </div>
+      <div class="toDoClear"><span>Clear Completed</span></div>
+     </div>
+   </div>
+ </div>
 </body>
 </html>
