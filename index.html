@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="./firebase.js"></script>
   <script src="./script.js"></script>
   
 </head>
@@ -22,7 +25,7 @@
    <div class="header">
      <div id="appTitle">To Do</div>
      <div id="toDoTheme">
-       <img src="images/icon-sun.svg" />
+       <img class="theme" src="images/icon-sun.svg" alt="Theme Icon"/>
      </div>
    </div>
    <div class="toDoInput">
@@ -39,30 +42,6 @@
    </div>
    <div class="toDoListWrapper">
      <div class="toDoList">
-      <div class="toDoItem">
-        <div class="toDoCheck">
-          <div class="toDoCheckMark">
-            <img src="images/icon-check.svg" />
-          </div>
-         </div>
-         <div class="toDoText">This is what I have to do</div>
-      </div>
-      <div class="toDoItem">
-        <div class="toDoCheck">
-          <div class="toDoCheckMark">
-            <img src="images/icon-check.svg" />
-          </div>
-         </div>
-         <div class="toDoText">This is what I have to do</div>
-      </div>
-      <div class="toDoItem">
-        <div class="toDoCheck">
-          <div class="toDoCheckMark">
-            <img src="images/icon-check.svg" />
-          </div>
-         </div>
-         <div class="toDoText">This is what I have to do</div>
-      </div>
       <div class="toDoItem">
         <div class="toDoCheck">
           <div class="toDoCheckMark">
